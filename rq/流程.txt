@@ -1,0 +1,13 @@
+https://www.gdqy.edu.cn/gqxw1/yw.htm
+
+https://www.gdqy.edu.cn/gqxw1/../info/1057/8920.htm
+
+
+https://www.gdqy.edu.cn/info/1057/8920.htm
+
+1.分析列表页
+2.获取<div class="new-list"> 标签中所有的a 标签，提取herf属性的值（这是详情页的网址）。
+3.提取a标签的文本内容（或title属性的值），获得文章标题、发表时间。
+
+4.循环requests.get(详情页的网址, headers="Chrome/70.0.0") ，获得详情页的源代码。
+5.获取  <div class="content"> 的文本内容。
